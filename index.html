@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ন্যায়বিচারের দাবি - শহীদ শরীফ ওসমান বিন হাদী</title>
+    <title>গণ-সংহতি: শহীদ শরীফ ওসমান বিন হাদী হত্যার বিচার চাই</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,32 +18,39 @@
             background: #000 url('https://i.ibb.co.com/pvsCknjS/bg.jpg') no-repeat center center fixed;
             background-size: cover; line-height: 1.6;
         }
-        .overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.95)); min-height: 100vh; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; }
-        .container { max-width: 450px; width: 100%; text-align: center; }
-        header { padding: 30px 0 10px; }
-        .p-img { width: 130px; height: 130px; border-radius: 50%; border: 3px solid var(--primary); box-shadow: 0 0 25px rgba(230, 57, 70, 0.5); }
-        h1 { font-family: 'Oswald', sans-serif; font-size: 1.8rem; margin: 15px 0 5px; text-transform: uppercase; }
+        .overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.95)); min-height: 100vh; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .container { max-width: 480px; width: 100%; text-align: center; }
         
-        /* Updated Timer UI */
+        header { margin-bottom: 20px; }
+        .p-img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--primary); box-shadow: 0 0 20px rgba(230, 57, 70, 0.4); }
+        h1 { font-family: 'Oswald', sans-serif; font-size: 1.7rem; margin: 15px 0 5px; color: #fff; letter-spacing: 1px; }
+        .sub-tag { color: var(--primary); font-weight: 700; font-size: 1.1rem; text-transform: uppercase; margin-bottom: 20px; display: block; }
+
+        /* Timer Poster Card */
         #poster-card {
             background: #8d0801 url('https://i.ibb.co.com/7hqFnWJ/profile.jpg') center top/cover;
-            width: 100%; aspect-ratio: 1/1.2; border-radius: 20px; border: 4px solid #fff;
-            position: relative; overflow: hidden; margin: 25px 0; display: flex; flex-direction: column; justify-content: center;
+            width: 100%; aspect-ratio: 1/1.1; border-radius: 20px; border: 4px solid #fff;
+            position: relative; overflow: hidden; margin: 10px 0; display: flex; flex-direction: column; justify-content: center;
         }
-        #poster-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(141, 8, 1, 0.75), rgba(0,0,0,0.85)); }
+        #poster-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(141, 8, 1, 0.8), rgba(0,0,0,0.9)); }
         .p-content { position: relative; z-index: 2; padding: 20px; }
-        .p-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 25px; line-height: 1.4; }
+        .p-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 25px; line-height: 1.4; color: #fff; }
         
-        /* Modernized Text Timer */
-        .live-timer { font-family: 'Oswald', sans-serif; font-size: 1.4rem; color: #fff; margin: 15px 0; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
-        .t-segment { background: #fff; color: #8d0801; padding: 5px 12px; border-radius: 8px; font-weight: bold; }
-        .t-label { font-size: 0.7rem; color: #333; display: block; margin-top: -5px; }
+        .live-timer { font-family: 'Oswald', sans-serif; font-size: 1.5rem; color: #fff; margin: 15px 0; display: flex; justify-content: center; gap: 8px; }
+        .t-segment { background: #fff; color: #8d0801; padding: 8px 12px; border-radius: 10px; font-weight: bold; min-width: 55px; }
+        .t-label { font-size: 0.7rem; color: #333; display: block; margin-top: -5px; font-family: 'Hind Siliguri'; }
 
-        .dl-btn { background: #fff; color: #8d0801; border: none; padding: 12px 28px; border-radius: 50px; font-weight: 700; cursor: pointer; margin-top: -25px; z-index: 5; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
-        .f-card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(15px); margin-top: 45px; }
-        input { width: 100%; padding: 14px; margin-bottom: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.4); color: #fff; box-sizing: border-box; }
-        .sub-btn { width: 100%; padding: 15px; background: var(--primary); color: #fff; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }
-        footer { margin-top: 50px; padding: 30px 0; color: #aaa; font-size: 0.85rem; }
+        .dl-btn { background: #fff; color: #8d0801; border: none; padding: 12px 25px; border-radius: 50px; font-weight: 700; cursor: pointer; margin-top: -25px; z-index: 5; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: 0.3s; }
+        .dl-btn:hover { background: #f0f0f0; transform: scale(1.05); }
+
+        /* Mass Solidarity Form */
+        .f-card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(15px); margin-top: 40px; }
+        .f-card h3 { color: #fff; margin-bottom: 15px; font-size: 1.4rem; }
+        input { width: 100%; padding: 14px; margin-bottom: 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.4); color: #fff; box-sizing: border-box; font-family: inherit; }
+        .sub-btn { width: 100%; padding: 16px; background: var(--primary); color: #fff; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 1.1rem; transition: 0.3s; }
+        .sub-btn:hover { background: #ff4d5a; box-shadow: 0 0 20px rgba(230, 57, 70, 0.4); }
+
+        footer { margin-top: 40px; padding: 20px 0; color: #888; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -53,11 +60,12 @@
         <header>
             <img src="https://i.ibb.co.com/7hqFnWJ/profile.jpg" alt="Hadi" class="p-img">
             <h1>শহীদ শরীফ ওসমান বিন হাদী</h1>
+            <span class="sub-tag">হত্যার বিচার চাই</span>
         </header>
 
         <div id="poster-card">
             <div class="p-content">
-                <div class="p-title">শহীদ ওসমান হাদী হত্যার বিচারহীনতার সময়কাল</div>
+                <div class="p-title">বিচারহীনতার আজ <span id="total-days">0</span> দিন</div>
                 
                 <div class="live-timer">
                     <div class="t-segment"><span id="d">00</span><span class="t-label">দিন</span></div>
@@ -65,21 +73,23 @@
                     <div class="t-segment"><span id="m">00</span><span class="t-label">মিনিট</span></div>
                     <div class="t-segment"><span id="s">00</span><span class="t-label">সেকেন্ড</span></div>
                 </div>
-                <p style="margin-top:20px; opacity:0.8; font-size:0.8rem;">#JusticeForShaheedHadi</p>
+                <p style="margin-top:20px; opacity:0.8; font-size:0.85rem;">আমরা বিচার না পাওয়া পর্যন্ত গণনা থামবে না।</p>
+                <p style="font-size: 0.75rem; color: var(--primary); margin-top: 5px;">#JusticeForShaheedHadi</p>
             </div>
         </div>
 
-        <button class="dl-btn" onclick="download()"><i class="fas fa-camera"></i> ছবি ডাউনলোড করুন</button>
+        <button class="dl-btn" onclick="download()"><i class="fas fa-camera"></i> প্রতিবাদী পোস্টার ডাউনলোড</button>
 
         <div class="f-card">
-            <h3 style="color: var(--primary);">ন্যায়বিচারে সংহতি প্রকাশ</h3>
-            <input type="text" id="name" placeholder="আপনার পূর্ণ নাম">
-            <input type="text" id="loc" placeholder="জেলা / শহরের নাম">
+            <h3>গণ-সংহতি প্রকাশ করুন</h3>
+            <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 20px;">আপনার নাম যুক্ত করে বিচারের দাবিতে শামিল হোন</p>
+            <input type="text" id="name" placeholder="আপনার নাম">
+            <input type="text" id="loc" placeholder="আপনার জেলা/শহর">
             <button class="sub-btn" id="submitBtn" onclick="submitSign()">সংহতি প্রকাশ করছি</button>
         </div>
 
         <footer>
-            <p>&copy; ২০২৪ - ২০২৫ | Justice for Hadi</p>
+            <p>&copy; ২০২৪ - ২০২৫ | Justice For Hadi Campaign</p>
         </footer>
     </div>
 </div>
@@ -104,21 +114,26 @@
         const name = document.getElementById('name').value;
         const address = document.getElementById('loc').value;
 
-        if(!name || !address) return Swal.fire({ icon: 'error', title: 'উফ!', text: 'তথ্যগুলো পূরণ করুন' });
+        if(!name || !address) return Swal.fire({ icon: 'warning', title: 'তথ্য দিন', text: 'নাম ও ঠিকানা প্রয়োজন' });
+
+        const btn = document.getElementById('submitBtn');
+        btn.innerText = "সংহতি জমা হচ্ছে...";
+        btn.disabled = true;
 
         try {
             await addDoc(collection(db, "signatures"), { name, address, timestamp: serverTimestamp() });
-            
             Swal.fire({
                 title: 'ধন্যবাদ!',
-                text: 'আপনার সংহতি সফল হয়েছে।',
+                text: 'আপনার সংহতি রেকর্ড করা হয়েছে।',
                 icon: 'success',
-                confirmButtonText: 'ঠিক আছে',
                 confirmButtonColor: '#e63946'
             }).then(() => {
                 window.location.href = "https://www.effectivegatecpm.com/s7i7hwb5ty?key=8e0c863ae92b24d92f2407dbd19e041c";
             });
-        } catch (e) { console.error(e); }
+        } catch (e) { 
+            btn.disabled = false;
+            btn.innerText = "সংহতি প্রকাশ করছি";
+        }
     };
 </script>
 
@@ -126,16 +141,18 @@
     const start = new Date("2025-12-12T00:00:00").getTime();
     setInterval(() => {
         const diff = new Date().getTime() - start;
-        document.getElementById("d").innerText = Math.floor(diff / 86400000);
-        document.getElementById("h").innerText = Math.floor((diff % 86400000) / 3600000);
-        document.getElementById("m").innerText = Math.floor((diff % 3600000) / 60000);
-        document.getElementById("s").innerText = Math.floor((diff % 60000) / 1000);
+        const days = Math.floor(diff / 86400000);
+        document.getElementById("total-days").innerText = days;
+        document.getElementById("d").innerText = String(days).padStart(2, '0');
+        document.getElementById("h").innerText = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
+        document.getElementById("m").innerText = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
+        document.getElementById("s").innerText = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
     }, 1000);
 
     async function download() {
         const canvas = await html2canvas(document.getElementById("poster-card"), { scale: 3, useCORS: true });
         const link = document.createElement('a');
-        link.download = 'Justice_For_Hadi.png';
+        link.download = 'Justice_For_Hadi_Mass_Solidarity.png';
         link.href = canvas.toDataURL();
         link.click();
     }
