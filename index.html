@@ -43,6 +43,16 @@
         .dl-btn { background: #fff; color: #8d0801; border: none; padding: 12px 25px; border-radius: 50px; font-weight: 700; cursor: pointer; margin-top: -25px; z-index: 5; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: 0.3s; }
         .dl-btn:hover { background: #f0f0f0; transform: scale(1.05); }
 
+        /* Reminder Text */
+        .reminder-text { font-size: 0.85rem; color: #ccc; margin-top: 15px; padding: 0 10px; line-height: 1.4; }
+        
+        /* Share Options */
+        .share-container { margin-top: 15px; display: flex; justify-content: center; gap: 15px; }
+        .share-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; font-size: 1.2rem; transition: 0.3s; background: rgba(255,255,255,0.1); }
+        .share-btn.fb:hover { background: #1877F2; }
+        .share-btn.wa:hover { background: #25D366; }
+        .share-btn.tw:hover { background: #1DA1F2; }
+
         /* Mass Solidarity Form */
         .f-card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(15px); margin-top: 40px; }
         .f-card h3 { color: #fff; margin-bottom: 15px; font-size: 1.4rem; }
@@ -80,6 +90,16 @@
 
         <button class="dl-btn" onclick="download()"><i class="fas fa-camera"></i> প্রতিবাদী পোস্টার ডাউনলোড</button>
 
+        <div class="reminder-text">
+            প্রতিদিন একবার এই পোস্টার ডাউনলোড করে আপনার সোশ্যাল মিডিয়ায় হাদি হত্যার বিচারের রিমাইন্ডার দিন।
+        </div>
+
+        <div class="share-container">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://justicehadi.vercel.app/" target="_blank" class="share-btn fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?text=শহীদ ওসমান হাদীর হত্যার বিচারের দাবিতে সংহতি জানান: https://justicehadi.vercel.app/" target="_blank" class="share-btn wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com/intent/tweet?text=Justice For Shaheed Hadi&url=https://justicehadi.vercel.app/" target="_blank" class="share-btn tw"><i class="fab fa-twitter"></i></a>
+        </div>
+
         <div class="f-card">
             <h3>গণ-সংহতি প্রকাশ করুন</h3>
             <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 20px;">আপনার নাম যুক্ত করে বিচারের দাবিতে শামিল হোন</p>
@@ -89,7 +109,7 @@
         </div>
 
         <footer>
-            <p>&copy; ২০২৪ - ২০২৫ | Justice For Hadi Campaign</p>
+            <p>&copy; ২০২৫ | Justice For Hadi Campaign</p>
         </footer>
     </div>
 </div>
